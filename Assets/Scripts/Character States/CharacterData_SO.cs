@@ -15,6 +15,7 @@ public class CharacterData_SO : ScriptableObject
 
     [Header("Enemy Only")]
     public int killPoint;
+    public int attack;
 
     [Header("Level")]
     public int currentLevel;
