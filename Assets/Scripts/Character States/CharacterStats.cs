@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(RigisterPlayer))]
 public class CharacterStats : MonoBehaviour
 {
     [Header("File in here")]
