@@ -1,9 +1,10 @@
 
 
-put the GameManager prefab into the scene,and in the player's script
+put the GameManager prefab into the scene,and in the player's script(maybe playerController?)
 
 in the Awake()
 
+(I create CharacterStats script, you can just put it on the player or enemy)
 GameManager.Instance.RigisterPlayer(CharacterStats);
 
 and after that, every script can access playerInformation by using
