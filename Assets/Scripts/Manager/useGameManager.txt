@@ -1,0 +1,16 @@
+
+
+put the GameManager prefab into the scene,and in the player's script
+
+in the Awake()
+
+GameManager.Instance.RigisterPlayer(CharacterStats);
+
+and after that, every script can access playerInformation by using
+
+GameManager.Instance.playerStats.gameObject;
+
+or using 
+
+GameManager.Instance.playerStats.currentHealth....
+
