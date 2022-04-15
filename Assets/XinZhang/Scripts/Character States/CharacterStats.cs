@@ -35,7 +35,10 @@ public class CharacterStats : MonoBehaviour
 
     public void EquipWeapon(itemData_SO weapon)
     {
-
+        if(weapon.weaponPrefab != null)
+        {
+            Instantiate(weapon.weaponPrefab, weaponSlot);
+        }
     }
 
 }

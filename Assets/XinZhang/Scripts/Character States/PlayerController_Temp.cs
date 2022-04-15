@@ -56,11 +56,12 @@ public class PlayerController_Temp : MonoBehaviour
             if(item.gameObject.CompareTag("item"))
             {
                 //check if the item is weapon or not;
-                if(true)
+                var mItem = item.GetComponent<ItemPickUp>().itemData;
+                if(mItem.itemType == ItemType.Weapon)
                 {
-
+                    GameManager.Instance.playerStats.EquipWeapon(item.GetComponent<ItemPickUp>().itemData);
                 }
-                else
+                else //it is a props
                 {
 
                 }
